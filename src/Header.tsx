@@ -5,8 +5,8 @@ interface Header {
     children: React.ReactNode
 }
 
-const Header: React.FC<Header> = ({ color = "pink", children }) => {
-  return <div className={`button button-${color}`}>{children}</div>
+const Header: React.FC<Header> = ({ color, children }) => {
+  return <header className={`header header-${color}`}>{children}</header>
   }
 
 export { Header }
