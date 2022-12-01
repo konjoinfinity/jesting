@@ -14,6 +14,7 @@ const priceData: [number, string][] = [
   [16202, "11/25/2022"]
 ] 
 
+
 function Day({ price, date }: Props) {
   return (
     <div style={{display: "flex", justifyContent: "space-between"}}>
