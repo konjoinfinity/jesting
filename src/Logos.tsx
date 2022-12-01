@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { SocialIcon } from 'react-social-icons';
+import './App.css';
 
 interface Props {
   network: string;
@@ -63,20 +64,20 @@ const priceData: [string][] = [
 
 const buttonStyle = {
     height:200, 
-    width: 200
+    width: 200,
   }
 
 function Networks({ network }: Props) {
   return (
-    <SocialIcon network={network} style={buttonStyle} />
+    <SocialIcon network={network} style={buttonStyle}/>
   );
 }
 
 
 export default function Logos() {
   return priceData.map(([network]) => (
-    <div style={{display: "flex", alignItems: "center", justifyContent: "center", padding: 10 }}>
-<Networks network={network} key={network} />
+    <div style={{display: "flex", alignItems: "center", justifyContent: "center", padding: 10 }} className="avatar">
+<Networks network={network} key={network}/>
 </div>
   ))
   }
