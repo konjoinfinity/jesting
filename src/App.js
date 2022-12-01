@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Header } from './Header.tsx';
+import Prices from './Prices.tsx';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <p>
           Konjo
         </p>
+         <Prices/>
         </Header>
     </div>
   );
